@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_01_052356) do
+ActiveRecord::Schema.define(version: 2021_09_09_015610) do
 
-  create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_attachments", charset: "utf8mb4", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
     t.bigint "record_id", null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_10_01_052356) do
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
 
-  create_table "active_storage_blobs", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_blobs", charset: "utf8mb4", force: :cascade do |t|
     t.string "key", null: false
     t.string "filename", null: false
     t.string "content_type"
@@ -34,13 +34,13 @@ ActiveRecord::Schema.define(version: 2021_10_01_052356) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "active_storage_variant_records", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "active_storage_variant_records", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "appointments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "appointments", charset: "utf8mb4", force: :cascade do |t|
     t.string "date"
     t.string "time"
     t.text "reason"
@@ -51,7 +51,8 @@ ActiveRecord::Schema.define(version: 2021_10_01_052356) do
     t.index ["patient_id"], name: "index_appointments_on_patient_id"
   end
 
-  create_table "patients", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "patients", charset: "utf8mb4", force: :cascade do |t|
+    t.string "patient_id"
     t.string "first_name"
     t.string "last_name"
     t.string "birth_date"
@@ -60,10 +61,9 @@ ActiveRecord::Schema.define(version: 2021_10_01_052356) do
     t.string "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "patient_id"
   end
 
-  create_table "sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "sessions", charset: "utf8mb4", force: :cascade do |t|
     t.string "username"
     t.string "password"
     t.string "user_type"
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 2021_10_01_052356) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", charset: "utf8mb4", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "username"
