@@ -16,12 +16,10 @@ default: &default
   username: <%= ENV['MEDICAL_SARRS_BACKEND_DATABASE_USER'] %>
   password: <%= ENV['MEDICAL_SARRS_BACKEND_DATABASE_PASSWORD'] %>
   socket: /var/run/mysqld/mysqld.sock
-  host: 'mysql-sevica.alwaysdata.net'
-
 
 development:
   <<: *default
-  database: sevica_mas
+  database: medical_sarrs_backend_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -52,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: sevica_mas
-  username: sevica
-  password: Destino21
+  database: medical_sarrs_backend_production
+  username: medical_sarrs_backend
+  password: <%= ENV['MEDICAL_SARRS_BACKEND_DATABASE_PASSWORD'] %>
