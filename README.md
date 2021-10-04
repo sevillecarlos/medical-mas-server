@@ -1,24 +1,43 @@
-# README
+# Medical MAS Server
+The server for the Medical MAS app.
+# Built
+## Development Technologies
+- Ruby on Rails
+## Database
+- MySQL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Getting Start
+```
+git clone https://github.com/sevillecarlos/medical-mas-server.git
+```
+### or Download the zip.
+## Project setup
+```
+ bundle install
+```
+### Compiles and hot-reloads for development
+```
+rails s
+```
+### Create your .env file for the environment variables
+* *COMMERC_E_BACKEND_DATABASE_USER*
+* *COMMERC_E_BACKEND_DATABASE_PASSWORD*
 
-Things you may want to cover:
+## Commerc-e App
+Navigate to [Commerc-e ](https://github.com/sevillecarlos/commerc-e) to found the app.
 
-* Ruby version
+# Author
+## Carlos Alberto Sevilla Fernandez
+* Github: [@sevillecarlos](https://github.com/sevillecarlos)
+* LinkedIn: [Carlos Alberto Sevilla Fernandez](https://github.com/sevillecarlos)
 
-* System dependencies
+# Contributing
+Contributions, issues and feature requests are welcome!
+Feel free to check the [Issues Page](https://github.com/sevillecarlos/commerc-e-server/issues).
 
-* Configuration
+# License
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
