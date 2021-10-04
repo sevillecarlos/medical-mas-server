@@ -2,9 +2,9 @@
 > The server for the Medical MAS app.
 # Built
 ## Development Technologies
-- Ruby on Rails
+![](https://img.shields.io/badge/Back--End-RubyonRails-red)
 ## Database
-- MySQL
+![](https://img.shields.io/badge/Database-MYSQL-yellow)
 
 # Getting Start
 ```
