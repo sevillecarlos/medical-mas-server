@@ -1,5 +1,5 @@
 # Medical MAS Server
-The server for the Medical MAS app.
+> The server for the Medical MAS app.
 # Built
 ## Development Technologies
 - Ruby on Rails
