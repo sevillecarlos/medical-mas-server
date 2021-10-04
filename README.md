@@ -20,11 +20,11 @@ git clone https://github.com/sevillecarlos/medical-mas-server.git
 rails s
 ```
 ### Create your .env file for the environment variables
-* *COMMERC_E_BACKEND_DATABASE_USER*
-* *COMMERC_E_BACKEND_DATABASE_PASSWORD*
+* *MEDICAL_SARRS_BACKEND_DATABASE_USER*
+* *MEDICAL_SARRS_BACKEND_DATABASE_PASSWORD*
 
 ## Commerc-e App
-Navigate to [Commerc-e ](https://github.com/sevillecarlos/commerc-e) to found the app.
+Navigate to [Medical MAS ](https://github.com/sevillecarlos/medical-mas) to found the app.
 
 # Author
 ## Carlos Alberto Sevilla Fernandez
@@ -33,7 +33,7 @@ Navigate to [Commerc-e ](https://github.com/sevillecarlos/commerc-e) to found th
 
 # Contributing
 Contributions, issues and feature requests are welcome!
-Feel free to check the [Issues Page](https://github.com/sevillecarlos/commerc-e-server/issues).
+Feel free to check the [Issues Page](https://github.com/sevillecarlos/medical-mas-server/issues).
 
 # License
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
